@@ -114,6 +114,22 @@ var text = "";
         text = 'Anciano';
     }
 console.log (text);
+
+//5) For
+//a)
+//var array=  ["pa", "pe" , "pi", "po", "pu" ];
+//for (let index = 0; index < array.length; index++) {
+//    alert (array [index]);
+    
+//}
+
+//b)
+var array=  ["pa", "pe" , "pi", "po", "pu" ];
+var arraym= array.substring(0,1).toUpperCase; 
+for (let array = 0; array < array.length; array++) {
+    alert (arraym [array]);
+    
+}
     
 
 
