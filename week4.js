@@ -85,6 +85,37 @@ var newmonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 var copy = newmonths.slice(4, 11);
 console.log (copy);
 
+//4) If Else
+//a)
+var numberrandom = Math.random();
+    if (numberrandom >= 0.5){
+    console.log ('Greater than 0.5');
+    } else {
+    console.log ('Lower than 0.5');
+    }
+
+//b)
+var age = 29;
+var text = "";
+
+    if(age < 2){
+        text = 'Bebe';
+    } else if (age >= 2 && age <= 12) {
+         text = 'Nino';
+    } else if (age >= 13 && age <= 19) {
+        text = 'Adolescente';
+    } else if (age >= 20 && age <= 30) {
+        text = 'Joven';
+    } else if(age >= 31 && age <= 60) {
+        text = 'Adulto';
+    } else if(age >= 61 && age <= 75){
+        text = 'Adulto mayor';
+    } else if(age > 75){
+        text = 'Anciano';
+    }
+console.log (text);
+    
+
 
 
 
