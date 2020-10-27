@@ -134,7 +134,7 @@ for (let index = 0; index < array.length; index++) {
 //c)
 var sentence= "";
 for (let index = 0; index < array.length; index++) {
-    sentence = sentence + array[index] + " ";
+    sentence = sentence + array[index];
      
 }
 alert (sentence);
@@ -146,9 +146,54 @@ var empty = [];
   }
   console.log(empty);
 
-  //6) Funciones
-  //a)
-  
+//6) Funciones
+//a) , b) y d)
+var x = sum(4, 3);   
+
+function sum(a, b) {
+  if (validate_numeric (a) && validate_numeric (b)) { 
+  var newa=  validate_integer_d (a);
+  var newb=  validate_integer_d (b);
+    return newa + newb;
+    
+ } else {
+     return "NaN"
+ }
+ }
+ console.log (x);
+ 
+ function validate_integer_d (a) {
+    if (Number.isInteger(a)) {
+       return a;
+    }
+    else {
+        alert ("number is not integer");
+        return Math.round(a);}
+               
+}
+
+
+ //c)
+ var y = validate_integer (5);
+ function validate_integer (a) {
+     if (Number.isInteger(a)) {
+        alert("true");
+    }       
+ }
+
+//e)
+
+function validate_numeric(a) {
+        if (!isNaN(a)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+ 
+ 
+ 
 
 
 
