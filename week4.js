@@ -36,7 +36,27 @@ console.log (last);
 //d)
 var name= "codificacion"
 var change= name.substring (0, 1);
-var changema= name.toUpperCase ();
-var changemi= name.tolower (1, 12);
-var all= change+changema+changemi;
+var changeUp= change.toUpperCase ();
+var changeLo= name.toLowerCase ().substring (1);
+var all= changeUp + changeLo;
 console.log (all);
+
+//e)
+var blank= "codifi cacion"
+var firstSpace = blank.indexOf(" ");
+console.log (firstSpace);
+
+//f)
+var words= "codificacion variabilidad"
+var word1= words.substring (0, words.indexOf (" "));
+var word2= words.substring (words.indexOf (" ") + 1);
+word1= word1.substring(0, 1).toUpperCase() + word1.substring(1).toLowerCase();
+word2= word2.substring(0, 1).toUpperCase() + word2.substring(1).toLowerCase();
+var doit= word1 + " " + word2;
+console.log (doit);
+
+
+
+
+
+
