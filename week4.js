@@ -55,7 +55,35 @@ word2= word2.substring(0, 1).toUpperCase() + word2.substring(1).toLowerCase();
 var doit= word1 + " " + word2;
 console.log (doit);
 
+//3) Arrays
+//a)
+ var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+ console.log ( months[4] , months[10]);
 
+//b)
+console.log (months.sort ());
+
+//c) 
+months.unshift ("start");
+months.push ("end");
+console.log (months);
+
+//d)
+months.shift ();
+months.pop ();
+console.log (months);
+
+//e)
+months.reverse ();
+console.log (months);
+
+//f)
+console.log (months.join('-'));
+
+//g
+var newmonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var copy = newmonths.slice(4, 11);
+console.log (copy);
 
 
 
